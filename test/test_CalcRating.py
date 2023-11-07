@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import pytest
 from Types import DataType
 from CalcRating import CalcRating
-import pytest
 
 RatingsType = dict[str, float]
 
@@ -11,18 +11,18 @@ class TestCalcRating:
     def input_data(self) -> tuple[DataType, RatingsType]:
         data: DataType = {
             "Абрамов Петр Сергеевич":
-                [
-                    ("математика", 80),
-                    ("русский язык", 76),
-                    ("программирование", 100)
-                ],
+            [
+                ("математика", 80),
+                ("русский язык", 76),
+                ("программирование", 100)
+            ],
             "Петров Игорь Владимирович":
-                [
-                    ("математика", 61),
-                    ("русский язык", 80),
-                    ("программирование", 78),
-                    ("литература", 97)
-                ]
+            [
+                ("математика", 61),
+                ("русский язык", 80),
+                ("программирование", 78),
+                ("литература", 97)
+            ]
         }
         rating_scores: RatingsType = {
             "Абрамов Петр Сергеевич": 85.3333,
