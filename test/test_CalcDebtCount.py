@@ -4,7 +4,7 @@ from Types import DataType
 from CalcDebtCount import CalcDebtCount
 
 
-class TestCalcRating:
+class TestCalcDebtRating:
     @pytest.fixture()
     def input_data(self) -> tuple[DataType, int]:
         data: DataType = {

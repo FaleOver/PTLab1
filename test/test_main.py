@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from main import get_path_from_arguments
 import pytest
+from main import get_path_from_arguments
 
 
 @pytest.fixture()

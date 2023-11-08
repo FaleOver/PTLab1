@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import io
 import xml.etree.ElementTree as ET
 from Types import DataType
 from DataReader import DataReader
