@@ -11,5 +11,5 @@ class CalcDebtCount:
         for student, grades in self.data.items():
             if sum(grade < 61 for _, grade in grades) == 2:
                 self.debtCount += 1
-        print("Number of students with debt in 2 subjects: ", self.debtCount)
+        #print("Number of students with debt in 2 subjects: ", self.debtCount)
         return self.debtCount
