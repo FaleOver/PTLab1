@@ -7,9 +7,11 @@ from main import get_path_from_arguments
 def correct_txt_arguments_string() -> tuple[list[str], str]:
     return ["-p", "/home/user/file.txt"], "/home/user/file.txt"
 
+
 @pytest.fixture()
 def correct_xml_arguments_string() -> tuple[list[str], str]:
     return ["-p", "/home/user/file.xml"], "/home/user/file.xml"
+
 
 @pytest.fixture()
 def noncorrect_arguments_string() -> list[str]:
@@ -21,10 +23,12 @@ def test_get_path_from_correct_txt_arguments(
     path = get_path_from_arguments(correct_txt_arguments_string[0])
     assert path == correct_txt_arguments_string[1]
 
+
 def test_get_path_from_correct_xml_arguments(
         correct_xml_arguments_string: tuple[list[str], str]) -> None:
     path = get_path_from_arguments(correct_xml_arguments_string[0])
     assert path == correct_xml_arguments_string[1]
+
 
 def test_get_path_from_noncorrect_arguments(
         noncorrect_arguments_string: list[str]) -> None:

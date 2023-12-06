@@ -8,7 +8,6 @@ from XMLDataReader import XMLDataReader
 class TestTextDataReader:
     @pytest.fixture()
     def file_and_data(self) -> tuple[str, DataType]:
-        #filepath = osp.join(osp.dirname(osp.abspath(__file__)), "xmlData.xml")
         text = '<?xml version="1.0" encoding="UTF-8" ?>\n' + \
                 '<root>\n' + \
                 '  <student name="Иванов Иван Иванович">\n' + \
